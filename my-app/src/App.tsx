@@ -1,13 +1,19 @@
-import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
-import "./App.css";
-import InputComponent from "./components/InputComponent";
+import React, { useState } from 'react';
+import './App.css';
+import InputPlusMinusComponent from './components/pages/TextAdder';
+import InputMultiplyComponent from './components/pages/ShowText';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <InputComponent />
+    <div className='App'>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={InputPlusMinusComponent} />
+
+          <Route exact path='/page2' component={InputMultiplyComponent} />
+        </Switch>
+      </Router>
     </div>
   );
 }

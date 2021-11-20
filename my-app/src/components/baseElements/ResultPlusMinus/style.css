@@ -1,0 +1,9 @@
+.mainDiv {
+  text-align: center;
+  margin: 50px;
+}
+.mainButton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

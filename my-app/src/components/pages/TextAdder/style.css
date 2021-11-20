@@ -1,0 +1,17 @@
+.mainButton {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.stateButtonDiv {
+  margin: 50px;
+}
+
+.StatePlusMinusButton {
+  margin: '30px';
+}
+
+.button {
+  margin: 30px;
+}
